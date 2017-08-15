@@ -1,0 +1,32 @@
+﻿html {
+    font-family: IRANSans, Tahoma;
+}
+
+body {
+    font-family: IRANSans, Tahoma;
+}
+
+code,
+kbd,
+pre,
+samp {
+    /*font-family: monospace, monospace;
+    font-size: 1em;*/
+}
+
+.tooltip {
+    font-family: IRANSans, Tahoma;
+}
+
+.popover {
+    font-family: IRANSans, Tahoma;
+}
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+    font-family: IRANSans, Tahoma;
+}
+.list-group-item
+{
+    border:none;
+}
