@@ -5,30 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css" />
-    @Scripts.Render("~/bundles/jquery")
-    @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />*@
+
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    @*<link href="~/Content/font-awesome.min.css" rel="stylesheet" />*@
     @Styles.Render(Bundles.Styles.fontAwesomeCss)
-    <link href="~/Content/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" />
-    <link href="~/Content/IranSans/IranSans.css" rel="stylesheet" />
-    <link href="~/Content/bootstrap-rtl.min.css" rel="stylesheet" />
-    <link href="~/Content/bootstrap-switch-rtl.min.css" rel="stylesheet" />
-    <link href="~/Content/components-rtl.min.css" rel="stylesheet" />
-    <link href="~/Content/components-rtl-overlay.css" rel="stylesheet" />
-    <link href="~/Content/bootstrap-overlay.css" rel="stylesheet" />
-    <link href="~/Content/plugins-rtl.min.css" rel="stylesheet" />
-    <link href="~/Content/theme/layout-rtl.min.css" rel="stylesheet" />
-    <link href="~/Content/theme/themes/darkblue-rtl.min.css" rel="stylesheet" />
-    <link href="~/Content/css/select2.min.css" rel="stylesheet" />
-    @*<link href="~/Content/theme/custom-rtl.min.css" rel="stylesheet" />*@
-    <link href="~/Content/Site.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
     @RenderSection("style", false)
-    @*@Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")*@
 </head>
 <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-sidebar-menu-closed page-sidebar-closed">
-    
+
     <div class="page-wrapper">
         <!-- BEGIN HEADER -->
         <div class="page-header navbar navbar-fixed-top">
@@ -517,14 +501,14 @@
                                 <i class="fa fa-circle"></i>
                             </li>
                             @RenderSection("BreadCrumb", false)
-                            
+
                             @*<li>
-                <a href="#">Blank Page</a>
-                <i class="fa fa-circle"></i>
-            </li>
-            <li>
-                <span>Page Layouts</span>
-            </li>*@
+                                    <a href="#">Blank Page</a>
+                                    <i class="fa fa-circle"></i>
+                                </li>
+                                <li>
+                                    <span>Page Layouts</span>
+                                </li>*@
                         </ul>
 
                     </div>
@@ -1156,20 +1140,9 @@
     <script src="../assets/global/plugins/ie8.fix.min.js"></script>
     <![endif]-->
     <!-- BEGIN CORE PLUGINS -->
-    @*@Scripts.Render("~/bundles/jquery")*@
-    <script src="~/Scripts/bootstrap.min.js"></script>
-    <script src="~/Scripts/jquery.slimscroll.min.js"></script>
-    <script src="~/Scripts/jquery.blockUI.js"></script>
-    <script src="~/Scripts/bootstrap-switch.min.js"></script>
-    <!-- END CORE PLUGINS -->
-    <!-- BEGIN THEME GLOBAL SCRIPTS -->
-    <script src="~/Scripts/app.min.js"></script>
-    <!-- END THEME GLOBAL SCRIPTS -->
-    <!-- BEGIN THEME LAYOUT SCRIPTS -->
-    <script src="~/Scripts/layout.min.js"></script>>
-    <script src="~/Scripts/quick-sidebar.min.js"></script>
-    <script src="~/Scripts/quick-nav.min.js"></script>
-    <script src="~/Scripts/select2.min.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/Content/js")
+
     @RenderSection("script", false)
     <!-- END THEME LAYOUT SCRIPTS -->
 

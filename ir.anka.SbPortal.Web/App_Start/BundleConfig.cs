@@ -35,10 +35,36 @@ namespace ir.anka.SbPortal.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                 Links.Bundles.Content.Assets.bootstrap_css,
-                Links.Bundles.Content.Assets.Site_css
+                Links.Bundles.Content.Assets.Site_css,
+                 "~/Content/simple-line-icons/simple-line-icons.min.css",
+                 "~/Content/IranSans/IranSans.css",
+                 "~/Content/bootstrap-rtl.min.css",
+                 "~/Content/bootstrap-switch-rtl.min.css",
+                 "~/Content/components-rtl.min.css",
+                 "~/Content/components-rtl-overlay.css",
+                 "~/Content/bootstrap-overlay.css",
+                 "~/Content/plugins-rtl.min.css",
+                 "~/Content/theme/layout-rtl.min.css",
+                 "~/Content/theme/themes/darkblue-rtl.min.css",
+                 "~/Content/css/select2.min.css",
+                 "~/Content/Site.css"
                       //"~/Content/bootstrap.css",
                       //"~/Content/site.css"
                       ));
+
+            bundles.Add(new StyleBundle("~/Content/js").Include(
+                 "~/Scripts/bootstrap.min.js",
+                 "~/Scripts/jquery.slimscroll.min.js",
+                 "~/Scripts/jquery.blockUI.js",
+                 "~/Scripts/bootstrap-switch.min.js",
+                 "~/Scripts/app.min.js",
+                 "~/Scripts/layout.min.js",
+                 "~/Scripts/quick-sidebar.min.js",
+                 "~/Scripts/quick-nav.min.js",
+                 "~/Scripts/select2.min.js"
+                ));
+
+            //BundleTable.EnableOptimizations = true;
         }
     }
 }
