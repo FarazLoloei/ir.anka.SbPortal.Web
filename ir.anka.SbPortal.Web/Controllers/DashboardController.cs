@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace ir.anka.SbPortal.Web.Controllers
 {
-    public class DashboardController : Controller
+    public partial class DashboardController : Controller
     {
         // GET: Dashboard
-        public ActionResult Index()
+        public virtual ActionResult Index()
         {
             return View();
         }

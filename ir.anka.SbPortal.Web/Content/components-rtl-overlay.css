@@ -1,0 +1,15 @@
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: IRANSans, Tahoma;
+}
+
+.bars, .chart, .pie, .primary-font {
+    font-family: IRANSans, Tahoma !important;
+}
+
+.dropdown-menu {
+    font-family: IRANSans, Tahoma;
+}
+
+.label, .table.table-light > thead > tr > th {
+    font-family: IRANSans, Tahoma;
+}
