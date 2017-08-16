@@ -3,17 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css" />
     @Scripts.Render("~/bundles/jquery")
     @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />*@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    @*<link href="~/Content/font-awesome.min.css" rel="stylesheet" />*@
+    @Styles.Render(Bundles.Styles.fontAwesomeCss)
     <link href="~/Content/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" />
     <link href="~/Content/IranSans/IranSans.css" rel="stylesheet" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-rtl.min.css" rel="stylesheet" />
     <link href="~/Content/bootstrap-switch-rtl.min.css" rel="stylesheet" />
     <link href="~/Content/components-rtl.min.css" rel="stylesheet" />
+    <link href="~/Content/components-rtl-overlay.css" rel="stylesheet" />
     <link href="~/Content/bootstrap-overlay.css" rel="stylesheet" />
     <link href="~/Content/plugins-rtl.min.css" rel="stylesheet" />
     <link href="~/Content/theme/layout-rtl.min.css" rel="stylesheet" />
@@ -1137,8 +1139,8 @@
         <!-- BEGIN FOOTER -->
         <div class="page-footer">
             <div class="page-footer-inner dir-ltr">
-                @System.DateTime.Now.Year &copy; گروه مهندسی نرم افزار آنکا &nbsp;|&nbsp;
-                <a target="_blank" href="#">واحد آی تی</a>
+                @System.DateTime.Now.Year &copy; @Resource.AnkaSoftwareCorp &nbsp;|&nbsp;
+                <a target="_blank" href="#">@Resource.ITSection</a>
             </div>
             <div class="scroll-to-top">
                 <i class="icon-arrow-up"></i>
@@ -1165,7 +1167,6 @@
     <!-- END THEME GLOBAL SCRIPTS -->
     <!-- BEGIN THEME LAYOUT SCRIPTS -->
     <script src="~/Scripts/layout.min.js"></script>>
-    <script src="~/Scripts/demo.min.js"></script>
     <script src="~/Scripts/quick-sidebar.min.js"></script>
     <script src="~/Scripts/quick-nav.min.js"></script>
     <script src="~/Scripts/select2.min.js"></script>

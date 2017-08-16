@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Optimization;
 
-namespace ir.anka.SbPortal.Web.App_Start
+namespace ir.anka.SbPortal.Web
 {
     public class BundleConfig
     {
@@ -23,12 +23,22 @@ namespace ir.anka.SbPortal.Web.App_Start
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                Links.Bundles.Scripts.Assets.bootstrap_min_js,
+                Links.Bundles.Scripts.Assets.respond_js
+                      //"~/Scripts/bootstrap.js",
+                      //"~/Scripts/respond.js"
+                      ));
+
+            bundles.Add(new StyleBundle(Bundles.Styles.fontAwesomeCss).Include(
+                Links.Bundles.Content.Assets.font_awesome_css
+                ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                Links.Bundles.Content.Assets.bootstrap_css,
+                Links.Bundles.Content.Assets.Site_css
+                      //"~/Content/bootstrap.css",
+                      //"~/Content/site.css"
+                      ));
         }
     }
 }
