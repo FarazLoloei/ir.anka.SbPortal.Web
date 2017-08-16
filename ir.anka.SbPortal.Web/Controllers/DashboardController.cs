@@ -10,8 +10,11 @@ namespace ir.anka.SbPortal.Web.Controllers
     {
         // GET: Dashboard
         public virtual ActionResult Index()
-        {
+        { 
+            // Load Dashboard
 
+            // Test
+            //test 
             return View();
         }
     }
