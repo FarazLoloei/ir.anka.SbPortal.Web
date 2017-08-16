@@ -11,6 +11,7 @@ namespace ir.anka.SbPortal.Web.Controllers
         // GET: Dashboard
         public ActionResult Index()
         {
+            // Load Dashboard
             return View();
         }
     }
