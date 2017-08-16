@@ -37,6 +37,10 @@ namespace ir.anka.SbPortal.Web
             public static readonly string bootstrapDatePickerCss = "~/Content";
             public static readonly string tagsinputCss = "~/Content/tagsinput";
             public static readonly string fontAwesomeCss = "~/Content/fontAwesome";
+
+
+
+             
         }
     }
 }
